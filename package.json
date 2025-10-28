@@ -1,0 +1,34 @@
+{
+  "name": "desireyourlove-backend",
+  "version": "1.0.0",
+  "description": "Backend API for DesireYourLove dating platform",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "node src/server.js",
+    "build": "echo 'No build step needed for JS'",
+    "lint": "eslint src/**/*.js",
+    "test": "jest"
+  },
+  "keywords": ["dating", "api", "nodejs", "express", "javascript"],
+  "author": "zippy-tech",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "dotenv": "^16.3.1",
+    "express-validator": "^7.0.1",
+    "socket.io": "^4.7.4",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  }
+}
