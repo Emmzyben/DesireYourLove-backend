@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Backend API for DesireYourLove dating platform",
   "type": "module",
-  "main": "dist/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node dist/server.js",
-    "dev": "node src/server.js",
+    "start": "node server.js",
+    "dev": "node server.js",
     "build": "echo 'No build step needed for JS'",
     "lint": "eslint src/**/*.js",
     "test": "jest"
