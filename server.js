@@ -74,6 +74,9 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
+app.get('/', (req, res) => {
+  res.send('🔥 DesireYourLove Backend API is running successfully!');
+});
 // Socket.IO for real-time messaging
 io.on('connection', (socket) => {
   console.log('User connected:', socket.id);
