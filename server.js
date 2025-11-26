@@ -26,6 +26,8 @@ import { notFound } from './middleware/notFound.js';
 dotenv.config();
 
 const app = express();
+// 🔥 Fix for Render / Vercel / proxies
+app.set("trust proxy", 1);
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
@@ -45,8 +47,8 @@ db.testConnection().then(() => {
 
 // Rate limiting
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, 
-  max: 1000, 
+  windowMs: 15 * 60 * 1000,
+  max: 1000,
   message: 'Too many requests from this IP, please try again later.'
 });
 
